@@ -96,22 +96,17 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                     width: 60,
                     height: 60,
                     color: Colors.black,
-                    child: const Icon(
-                      Icons.check,
-                      color: Colors.green,
-                      size: 46.0,
+                    child: right
+                      ),
                     ),
-                                  ),
-                                ),
                   ],
                 )
                 : ElevatedButton(
               onPressed: handleBuy,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                padding: EdgeInsets.symmetric(
+                padding: const EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 12.0),
-                textStyle: TextStyle(fontSize: 18, color: Colors.red),
               ),
               child: const Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
             ),
