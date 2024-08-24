@@ -16,7 +16,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   final List<IconData> icons = [
     bag,
     Icons.credit_card,
-    Icons.shopping_cart,
+    cart
   ];
 
   @override
