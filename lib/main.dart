@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Buy Button Example',
       home: BuyButtonScreen(),
     );
@@ -64,9 +65,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Buy Button Example'),
-      ),
+
       body: Center(
         child: GestureDetector(
           onTap: handleBuy,
