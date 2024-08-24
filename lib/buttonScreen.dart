@@ -91,11 +91,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 width: 60,
                 height: 60,
                 color: Colors.black,
-                child: const Icon(
-                  Icons.check,
-                  color: Colors.green,
-                  size: 46.0,
-                ),
+                child: check,
               ),
             )
                 : ElevatedButton(
