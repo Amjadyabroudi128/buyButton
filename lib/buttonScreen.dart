@@ -15,7 +15,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   late Timer iconTimer;
   final List<IconData> icons = [
     bag,
-    Icons.credit_card,
+    card,
     cart
   ];
 
