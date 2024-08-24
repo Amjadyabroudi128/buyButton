@@ -86,14 +86,20 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               ],
             )
                 : isSuccess
-                ? ClipOval(
-              child: Container(
-                width: 60,
-                height: 60,
-                color: Colors.black,
-                child: check,
-              ),
-            )
+                ? Column(
+                 mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Thanks for Shopping with us"),
+                    ClipOval(
+                      child: Container(
+                    width: 60,
+                    height: 60,
+                    color: Colors.black,
+                    child: check,
+                                  ),
+                                ),
+                  ],
+                )
                 : ElevatedButton(
               onPressed: handleBuy,
               style: ElevatedButton.styleFrom(
