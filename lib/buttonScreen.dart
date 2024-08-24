@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:buybutton/constants.dart';
 import 'package:flutter/material.dart';
 
 class BuyButtonScreen extends StatefulWidget {
@@ -14,10 +13,11 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   int currentIconIndex = 0;
   late Timer iconTimer;
   final List<IconData> icons = [
-    bag,
-    card,
-    cart
+    Icons.shopping_bag,
+    Icons.credit_card,
+    Icons.shopping_cart,
   ];
+
   @override
   void dispose() {
     iconTimer.cancel();
@@ -85,27 +85,25 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               ],
             )
                 : isSuccess
-                ? Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Thanks for Shopping here"),
-                    SizedBox(height: 6,),
-                    ClipOval(
-                      child: Container(
-                    width: 60,
-                    height: 60,
-                    color: Colors.black,
-                    child: right
-                      ),
-                    ),
-                  ],
-                )
+                ? ClipOval(
+              child: Container(
+                width: 60,
+                height: 60,
+                color: Colors.black,
+                child: const Icon(
+                  Icons.check,
+                  color: Colors.green,
+                  size: 46.0,
+                ),
+              ),
+            )
                 : ElevatedButton(
               onPressed: handleBuy,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
-                padding: const EdgeInsets.symmetric(
+                padding: EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 12.0),
+                textStyle: TextStyle(fontSize: 18, color: Colors.red),
               ),
               child: const Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
             ),
