@@ -54,7 +54,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
 
     // Simulate a delay of 3 seconds
     Timer(Duration(seconds: 3), () {
-      iconTimer.cancel(); // Stop changing icons
+      iconTimer.cancel();
       setState(() {
         isLoading = false;
         isSuccess = true;
@@ -81,8 +81,8 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                     width: 60,
                     height: 60,
                     color: Colors.black,
-                    child: Padding(
-                      padding: const EdgeInsets.all(10.0),
+                    child: const Padding(
+                      padding: EdgeInsets.all(10.0),
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
                           Color.fromARGB(255, 202, 156, 19),
@@ -106,7 +106,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 width: 60,
                 height: 60,
                 color: Colors.black,
-                child: Icon(
+                child: const Icon(
                   Icons.check,
                   color: Colors.green,
                   size: 46.0,
@@ -116,13 +116,13 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 : ElevatedButton(
               key: ValueKey(3),
               onPressed: handleBuy,
-              child: Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
                 padding: EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 12.0),
                 textStyle: TextStyle(fontSize: 18, color: Colors.red),
               ),
+              child: const Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
             ),
           ),
         ),
