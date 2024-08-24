@@ -73,7 +73,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
             duration: Duration(milliseconds: 300),
             child: isLoading
                 ? Stack(
-              key: ValueKey(1),
               alignment: Alignment.center,
               children: [
                 ClipOval(
@@ -101,7 +100,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
             )
                 : isSuccess
                 ? ClipOval(
-              key: ValueKey(2),
               child: Container(
                 width: 60,
                 height: 60,
@@ -114,7 +112,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               ),
             )
                 : ElevatedButton(
-              key: ValueKey(3),
               onPressed: handleBuy,
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.black,
