@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:buybutton/constants.dart';
 import 'package:flutter/material.dart';
 
 class BuyButtonScreen extends StatefulWidget {
@@ -13,7 +14,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   int currentIconIndex = 0;
   late Timer iconTimer;
   final List<IconData> icons = [
-    Icons.shopping_bag,
+    bag,
     Icons.credit_card,
     Icons.shopping_cart,
   ];
