@@ -90,6 +90,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Thanks for Shopping with us"),
+                    SizedBox(height: 6,),
                     ClipOval(
                       child: Container(
                     width: 60,
