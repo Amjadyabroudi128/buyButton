@@ -18,7 +18,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
     card,
     cart
   ];
-
   @override
   void dispose() {
     iconTimer.cancel();
