@@ -100,7 +100,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 backgroundColor: Colors.black,
                 padding: EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 12.0),
-                textStyle: TextStyle(fontSize: 18, color: Colors.red),
               ),
               child: const Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
             ),
