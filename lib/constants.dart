@@ -11,3 +11,4 @@ const TextStyle button = TextStyle(
 );
 const TextStyle animated = TextStyle(fontSize: 20);
 const Color containerClr = Colors.black;
+const Color iconColors = Colors.white;
