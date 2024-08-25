@@ -114,7 +114,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 padding: EdgeInsets.symmetric(
                     horizontal: 24.0, vertical: 12.0),
               ),
-              child: const Text('Buy Now', style: TextStyle(color: Color.fromARGB(255, 192, 174, 21)),),
+              child: const Text('Buy Now', style: button,),
             ),
           ),
         ),
