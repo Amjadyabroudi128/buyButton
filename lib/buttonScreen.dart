@@ -66,7 +66,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                   child: Container(
                     width: 60,
                     height: 60,
-                    color: Colors.black,
+                    color: containerClr,
                     child: const Padding(
                       padding: EdgeInsets.all(10.0),
                       child: CircularProgressIndicator(
