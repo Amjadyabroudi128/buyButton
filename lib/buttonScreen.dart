@@ -101,7 +101,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                       child: Container(
                     width: 60,
                     height: 60,
-                    color: Colors.black,
+                    color: containerClr,
                     child: check,
                       ),
                     ),
