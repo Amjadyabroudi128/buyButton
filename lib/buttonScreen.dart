@@ -93,7 +93,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                       repeatForever: false,
                       isRepeatingAnimation: false,
                       animatedTexts: [
-                        TyperAnimatedText('Thanks For shopping here', textStyle: TextStyle(fontSize: 20)),
+                        TyperAnimatedText('Thanks For shopping here', textStyle: animated),
                       ],
                     ),
                     SizedBox(height: 6,),

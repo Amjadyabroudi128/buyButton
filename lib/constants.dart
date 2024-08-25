@@ -9,3 +9,4 @@ const Icon check = Icon(Icons.check, color: Colors.green,size: 46.0,);
 const TextStyle button = TextStyle(
     color: Color.fromARGB(255, 192, 174, 21)
 );
+const TextStyle animated = TextStyle(fontSize: 20);
