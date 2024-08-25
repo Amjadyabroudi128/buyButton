@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:buybutton/constants.dart';
 import 'package:flutter/material.dart';
-
+import 'package:animated_text_kit/animated_text_kit.dart';
 class BuyButtonScreen extends StatefulWidget {
   @override
   _BuyButtonScreenState createState() => _BuyButtonScreenState();
@@ -89,7 +89,13 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 ? Column(
                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Thanks for Shopping with us"),
+                    AnimatedTextKit(
+                      repeatForever: false,
+                      isRepeatingAnimation: false,
+                      animatedTexts: [
+                        TyperAnimatedText('Thanks For shopping here', textStyle: TextStyle(fontSize: 20)),
+                      ],
+                    ),
                     SizedBox(height: 6,),
                     ClipOval(
                       child: Container(
@@ -97,8 +103,8 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                     height: 60,
                     color: Colors.black,
                     child: check,
-                                  ),
-                                ),
+                      ),
+                    ),
                   ],
                 )
                 : ElevatedButton(
