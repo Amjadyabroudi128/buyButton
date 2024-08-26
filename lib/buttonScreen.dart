@@ -65,8 +65,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               children: [
                 const ClipOval(
                   child: buttonContainer(
-                    width: 60,
-                    height: 60,
                     color: containerClr,
                     child: Padding(
                       padding: EdgeInsets.all(10.0),
@@ -95,10 +93,8 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                       ],
                     ),
                     SizedBox(height: 6,),
-                    ClipOval(
+                    const ClipOval(
                       child: buttonContainer(
-                    width: 60,
-                    height: 60,
                     color: containerClr,
                     child: check,
                       ),

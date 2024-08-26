@@ -10,8 +10,8 @@ class buttonContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width,
-      height: height,
+      width: 60,
+      height: 60,
       color: color,
       child: child,
     );
