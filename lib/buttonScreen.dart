@@ -96,7 +96,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                     ),
                     SizedBox(height: 6,),
                     ClipOval(
-                      child: Container(
+                      child: buttonContainer(
                     width: 60,
                     height: 60,
                     color: containerClr,
