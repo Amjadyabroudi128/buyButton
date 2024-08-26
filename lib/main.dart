@@ -1,3 +1,4 @@
+import 'package:buybutton/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'buttonScreen.dart';
@@ -13,6 +14,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Buy Button Example',
       home: BuyButtonScreen(),
+      theme: ThemeData(
+        progressIndicatorTheme: const ProgressIndicatorThemeData(
+          color: yellow,
+        )
+      ),
     );
   }
 }

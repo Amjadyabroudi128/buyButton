@@ -71,9 +71,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                     child: Padding(
                       padding: EdgeInsets.all(10.0),
                       child: CircularProgressIndicator(
-                        valueColor: AlwaysStoppedAnimation<Color>(
-                          yellow
-                        ),
                         strokeWidth: 2,
                       ),
                     ),
