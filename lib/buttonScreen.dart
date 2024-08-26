@@ -63,17 +63,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 ? Stack(
               alignment: Alignment.center,
               children: [
-                const ClipOval(
-                  child: buttonContainer(
-                    color: containerClr,
-                    child: Padding(
-                      padding: EdgeInsets.all(10.0),
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                      ),
-                    ),
-                  ),
-                ),
+                progressBar(),
                 Icon(
                   icons[currentIconIndex],
                   color: iconColors,
@@ -81,18 +71,12 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               ],
             )
                 : isSuccess
-                ? Column(
+                ? const Column(
                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    AnimatedTextKit(
-                      repeatForever: false,
-                      isRepeatingAnimation: false,
-                      animatedTexts: [
-                        TyperAnimatedText('Thanks For shopping here', textStyle: animated),
-                      ],
-                    ),
+                    myText(),
                     SizedBox(height: 6,),
-                    const ClipOval(
+                    ClipOval(
                       child: buttonContainer(
                     color: containerClr,
                     child: check,
@@ -104,6 +88,44 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
               onPressed: handleBuy,
               child: Text(btnTitle, style: button,),
             ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class myText extends StatelessWidget {
+  const myText({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedTextKit(
+      repeatForever: false,
+      isRepeatingAnimation: false,
+      animatedTexts: [
+        TyperAnimatedText('Thanks For shopping here', textStyle: animated),
+      ],
+    );
+  }
+}
+
+class progressBar extends StatelessWidget {
+  const progressBar({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return const ClipOval(
+      child: buttonContainer(
+        color: containerClr,
+        child: Padding(
+          padding: EdgeInsets.all(10.0),
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
           ),
         ),
       ),
