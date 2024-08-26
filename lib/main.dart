@@ -12,7 +12,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Buy Button Example',
       home: BuyButtonScreen(),
       theme: ThemeData(
         progressIndicatorTheme: const ProgressIndicatorThemeData(
@@ -24,7 +23,8 @@ class MyApp extends StatelessWidget {
             padding: EdgeInsets.symmetric(
                 horizontal: 24.0, vertical: 12.0),
           ),
-        )
+        ),
+
       ),
     );
   }
