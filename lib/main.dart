@@ -1,4 +1,5 @@
 import 'package:buybutton/constants.dart';
+import 'package:buybutton/theme.dart';
 import 'package:flutter/material.dart';
 
 import 'buttonScreen.dart';
@@ -13,19 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BuyButtonScreen(),
-      theme: ThemeData(
-        progressIndicatorTheme: const ProgressIndicatorThemeData(
-          color: yellow,
-        ),
-        elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black,
-            padding: EdgeInsets.symmetric(
-                horizontal: 24.0, vertical: 12.0),
-          ),
-        ),
-
-      ),
+      theme: ThemeApp.theme,
     );
   }
 }
