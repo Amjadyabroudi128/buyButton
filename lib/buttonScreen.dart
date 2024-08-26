@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:buybutton/constants.dart';
 import 'package:buybutton/container.dart';
+import 'package:buybutton/myText.dart';
 import 'package:buybutton/progressBar.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
@@ -95,19 +96,3 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
   }
 }
 
-class myText extends StatelessWidget {
-  const myText({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedTextKit(
-      repeatForever: false,
-      isRepeatingAnimation: false,
-      animatedTexts: [
-        TyperAnimatedText('Thanks For shopping here', textStyle: animated),
-      ],
-    );
-  }
-}
