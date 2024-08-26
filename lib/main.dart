@@ -17,6 +17,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         progressIndicatorTheme: const ProgressIndicatorThemeData(
           color: yellow,
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.black,
+            padding: EdgeInsets.symmetric(
+                horizontal: 24.0, vertical: 12.0),
+          ),
         )
       ),
     );
