@@ -77,7 +77,6 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 Icon(
                   icons[currentIconIndex],
                   color: iconColors,
-                  size: 30,
                 ),
               ],
             )
