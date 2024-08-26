@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:buybutton/constants.dart';
+import 'package:buybutton/container.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 class BuyButtonScreen extends StatefulWidget {
@@ -62,12 +63,12 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 ? Stack(
               alignment: Alignment.center,
               children: [
-                ClipOval(
-                  child: Container(
+                const ClipOval(
+                  child: buttonContainer(
                     width: 60,
                     height: 60,
                     color: containerClr,
-                    child: const Padding(
+                    child: Padding(
                       padding: EdgeInsets.all(10.0),
                       child: CircularProgressIndicator(
                         valueColor: AlwaysStoppedAnimation<Color>(
