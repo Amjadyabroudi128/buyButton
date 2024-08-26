@@ -4,7 +4,6 @@ import 'package:buybutton/container.dart';
 import 'package:buybutton/myText.dart';
 import 'package:buybutton/progressBar.dart';
 import 'package:flutter/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 class BuyButtonScreen extends StatefulWidget {
   @override
   _BuyButtonScreenState createState() => _BuyButtonScreenState();
