@@ -14,8 +14,8 @@ class ThemeApp {
             horizontal: 24.0, vertical: 12.0),
       ),
     ),
-    iconTheme: IconThemeData(
-      size: 30,
+    iconTheme: const IconThemeData(
+      size: defaultIconSize,
     )
   );
  }
