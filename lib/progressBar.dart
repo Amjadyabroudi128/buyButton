@@ -9,11 +9,11 @@ class progressBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ClipOval(
+    return  ClipOval(
       child: buttonContainer(
         color: containerClr,
         child: Padding(
-          padding: EdgeInsets.all(10.0),
+          padding: containerPadding,
           child: CircularProgressIndicator(
             strokeWidth: 2,
           ),

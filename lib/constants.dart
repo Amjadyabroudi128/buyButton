@@ -22,3 +22,5 @@ const String thanks = 'Thanks For shopping here';
 // sizes
 const double greenIcon = 46;
 const double defaultIconSize = 30;
+ // padding
+  EdgeInsetsGeometry containerPadding = EdgeInsets.all(10);
