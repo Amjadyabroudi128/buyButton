@@ -9,7 +9,7 @@ class ThemeApp {
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.black,
+        backgroundColor: containerClr,
         padding: EdgeInsets.symmetric(
             horizontal: 24.0, vertical: 12.0),
       ),
