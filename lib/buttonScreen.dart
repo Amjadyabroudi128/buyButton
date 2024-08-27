@@ -52,7 +52,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
 
   @override
   Widget build(BuildContext context) {
-    String btnTitle = "Buy Now";
+
     return Scaffold(
       body: Center(
         child: GestureDetector(
@@ -86,7 +86,7 @@ class _BuyButtonScreenState extends State<BuyButtonScreen> {
                 )
                 : ElevatedButton(
               onPressed: handleBuy,
-              child: Text(btnTitle, style: button,),
+              child: const Text(btnTitle, style: button,),
             ),
           ),
         ),
