@@ -13,7 +13,7 @@ class myText extends StatelessWidget {
       repeatForever: false,
       isRepeatingAnimation: false,
       animatedTexts: [
-        TyperAnimatedText('Thanks For shopping here', textStyle: animated),
+        TyperAnimatedText( thanks, textStyle: animated),
       ],
     );
   }

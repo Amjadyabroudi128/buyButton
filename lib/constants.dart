@@ -17,6 +17,7 @@ const Color yellow = Color.fromARGB(255, 192, 174, 21);
 const Color right = Colors.green;
  // titles
 const String btnTitle = "Buy Now";
+const String thanks = 'Thanks For shopping here';
 
 // sizes
 const double greenIcon = 46;
